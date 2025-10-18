@@ -1,0 +1,8 @@
+{
+    "name": "Ruby 3.2 (Codespaces)",
+    "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+    "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {}
+    },
+    "postCreateCommand": "bundle config set without 'development test' || true"
+  }
