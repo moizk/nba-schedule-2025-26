@@ -22,11 +22,14 @@ A simple HTML viewer is included to browse the schedule data with team logos.
 
 **Setup:**
 
-1. Download team logos (one-time setup):
+1. Download team logos and broadcaster logos (one-time setup):
    ```bash
    ruby download_logos.rb
+   ./download_broadcaster_logos.sh
    ```
-   This downloads all 30 NBA team logos from ESPN to the `logos/` folder.
+   This downloads:
+   - All 30 NBA team logos from ESPN → `logos/` folder
+   - National broadcaster logos (ESPN, ABC, TNT, NBA TV, Peacock, etc.) → `broadcaster-logos/` folder
 
 2. Generate schedule data:
    ```bash
@@ -44,14 +47,15 @@ A simple HTML viewer is included to browse the schedule data with team logos.
    ```
 
 **Features:**
-- 🏀 Team logos displayed with each game
+- 🏀 **Team logos** displayed with each game
+- 📺 **Broadcaster logos** prominently displayed (ESPN, ABC, TNT, NBA TV, Peacock, Prime Video, etc.)
 - 📅 Filter by season type (Preseason/Regular Season)
 - 🏆 Filter by team, month, or broadcast type
-- 📺 View game details including venue, date/time, and TV broadcasts
+- 🕐 View game details including venue, date/time, and TV broadcasts
 - 🎨 Clean, responsive interface using Bootstrap
-- 💾 Logos persisted locally in `logos/` folder
+- 💾 All logos persisted locally for fast loading
 
-**Note:** Logos are downloaded from ESPN's CDN and cached locally for fast loading.
+**Note:** The primary goal is to help you quickly see **where to watch** each game with visual broadcaster logos.
 
 ## Output Formats
 

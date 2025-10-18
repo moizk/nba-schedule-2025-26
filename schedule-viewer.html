@@ -77,6 +77,27 @@
         .national-tv {
             color: #c8102e;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.3rem;
+        }
+        .broadcaster-logo {
+            height: 32px;
+            width: auto;
+            max-width: 80px;
+            object-fit: contain;
+            background: white;
+            padding: 4px 6px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .broadcaster-logos {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
         }
         .loading {
             text-align: center;
@@ -176,6 +197,27 @@
         // Helper function to get logo path
         function getLogoPath(tricode) {
             return tricode ? `logos/${tricode}.png` : '';
+        }
+
+        // Helper function to get broadcaster logo path
+        function getBroadcasterLogoPath(broadcaster) {
+            if (!broadcaster) return null;
+            // Clean up broadcaster name and create filename
+            const filename = broadcaster.trim().replace(/\s+/g, '_') + '.png';
+            return `broadcaster-logos/${filename}`;
+        }
+
+        // Helper function to render broadcaster with logo
+        function renderBroadcasterLogos(broadcastersString) {
+            if (!broadcastersString) return '';
+            
+            // Split by " | " (space-pipe-space) which is the separator in the data
+            const broadcasters = broadcastersString.split(' | ').map(b => b.trim()).filter(b => b);
+            
+            return broadcasters.map(broadcaster => {
+                const logoPath = getBroadcasterLogoPath(broadcaster);
+                return `<img src="${logoPath}" alt="${broadcaster}" class="broadcaster-logo" title="${broadcaster}" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%2240%22><text x=%2250%%22 y=%2250%%22 font-size=%2212%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%23666%22>${broadcaster}</text></svg>';">`;
+            }).join('');
         }
 
         // Load the JSON data
@@ -367,11 +409,15 @@
                 
                 let tvInfo = '';
                 if (game.national_tv) {
-                    tvInfo += `<div class="national-tv">📺 ${game.national_tv}</div>`;
+                    const broadcasterLogos = renderBroadcasterLogos(game.national_tv);
+                    tvInfo += `<div class="national-tv">
+                        <span style="font-size: 1.2rem;">📺</span>
+                        <div class="broadcaster-logos">${broadcasterLogos}</div>
+                    </div>`;
                 }
                 if (game.home_rsns || game.away_rsns) {
                     const rsns = [game.home_rsns, game.away_rsns].filter(x => x).join(' | ');
-                    tvInfo += `<div>📡 ${rsns}</div>`;
+                    tvInfo += `<div style="font-size: 0.75rem; color: #999; margin-top: 0.25rem;">Local: ${rsns}</div>`;
                 }
 
                 const venue = game.venue || 'TBD';
