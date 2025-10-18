@@ -1,6 +1,13 @@
-# Usage inside Codespaces terminal:
+# nba_2025_26_schedule_to_csv.rb
+# Run inside your Codespace terminal:
 #   ruby nba_2025_26_schedule_to_csv.rb
-require 'json'; require 'csv'; require 'net/http'; require 'uri'; require 'time'
+# Produces nba_2025_26_regular_season.csv in the workspace.
+
+require 'json'
+require 'csv'
+require 'net/http'
+require 'uri'
+require 'time'
 
 SCHEDULE_URL = 'https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json'
 CHANNELS_URL = 'https://cdn.nba.com/static/json/liveData/channels/v2/channels_00.json'
@@ -23,29 +30,44 @@ def map_broadcasters(arr, chan_map)
   (arr || []).map { |x| chan_map[x['broadcasterId']] || x['broadcasterDisplay'] }.uniq
 end
 
+# --- Fetch data -------------------------------------------------------------
+
+puts "Fetching schedule and channel data..."
 schedule = get_json(SCHEDULE_URL)
-channels = (get_json(CHANNELS_URL) rescue {'channels'=>[]})
-chan_map = channels.fetch('channels', []).map { |c| [c['id'], c['name'] || c['shortName'] || c['id']] }.to_h
+channels = (get_json(CHANNELS_URL) rescue [])
+
+# Handle either { "channels": [...] } or an array
+chan_list =
+  if channels.is_a?(Hash)
+    channels['channels'] || []
+  else
+    channels
+  end
+
+chan_map = chan_list.map { |c| [c['id'], c['name'] || c['shortName'] || c['id']] }.to_h
+
+# --- Build rows -------------------------------------------------------------
 
 rows = []
+
 schedule.fetch('leagueSchedule', {}).fetch('gameDates', []).each do |date_block|
   date_block.fetch('games', []).each do |g|
-    # Regular Season only (seasonStage 2), in Oct 2025–Apr 2026 window
-    next unless g['seasonStage'] == 2
+    next unless g['seasonStage'] == 2 # 2 = Regular Season
     t_utc = Time.parse(g['gameTimeUTC']) rescue nil
     next unless t_utc && t_utc >= SEASON_START && t_utc <= SEASON_END
 
     b = g['broadcasters'] || {}
+
     rows << {
       game_id: g['gameId'],
       season_type: 'Regular Season',
       tip_utc: t_utc.utc.iso8601,
-      tip_et:  t_utc.getlocal('-05:00').iso8601, # ET for convenience
-      away_team: "#{g.dig('awayTeam','teamTricode')} (#{g.dig('awayTeam','teamName')})",
-      home_team: "#{g.dig('homeTeam','teamTricode')} (#{g.dig('homeTeam','teamName')})",
-      venue: g.dig('arena','arenaName'),
-      city:  g.dig('arena','arenaCity'),
-      state: g.dig('arena','arenaState'),
+      tip_et:  t_utc.getlocal('-05:00').iso8601,
+      away_team: "#{g.dig('awayTeam', 'teamTricode')} (#{g.dig('awayTeam', 'teamName')})",
+      home_team: "#{g.dig('homeTeam', 'teamTricode')} (#{g.dig('homeTeam', 'teamName')})",
+      venue: g.dig('arena', 'arenaName'),
+      city:  g.dig('arena', 'arenaCity'),
+      state: g.dig('arena', 'arenaState'),
       national_tv:  map_broadcasters(b['national'], chan_map).join(' | '),
       home_rsns:    map_broadcasters(b['homeTeam'], chan_map).join(' | '),
       away_rsns:    map_broadcasters(b['awayTeam'], chan_map).join(' | '),
@@ -56,9 +78,12 @@ schedule.fetch('leagueSchedule', {}).fetch('gameDates', []).each do |date_block|
   end
 end
 
-CSV.open('nba_2025_26_regular_season.csv', 'w') do |csv|
+# --- Write CSV --------------------------------------------------------------
+
+outfile = 'nba_2025_26_regular_season.csv'
+CSV.open(outfile, 'w') do |csv|
   csv << rows.first.keys
   rows.each { |r| csv << r.values }
 end
 
-puts "Wrote #{rows.size} games to nba_2025_26_regular_season.csv"
+puts "✅ Wrote #{rows.size} games to #{outfile}"
