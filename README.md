@@ -18,30 +18,40 @@ The data includes:
 
 ## Web Viewer
 
-A simple HTML viewer is included to browse the schedule data.
+A simple HTML viewer is included to browse the schedule data with team logos.
 
-**To use the viewer:**
+**Setup:**
 
-Due to browser CORS restrictions, you need to run a local web server:
+1. Download team logos (one-time setup):
+   ```bash
+   ruby download_logos.rb
+   ```
+   This downloads all 30 NBA team logos from ESPN to the `logos/` folder.
 
-```bash
-# Start a local web server
-python3 -m http.server 8000
+2. Generate schedule data:
+   ```bash
+   ruby fetch_schedule.rb
+   ```
 
-# Then open in your browser:
-# http://localhost:8000/schedule-viewer.html
-```
+3. Start a local web server (due to browser CORS restrictions):
+   ```bash
+   python3 -m http.server 8000
+   ```
 
-Alternatively, use any other local web server of your choice.
+4. Open in your browser:
+   ```
+   http://localhost:8000/schedule-viewer.html
+   ```
 
 **Features:**
-- Filter by season type (Preseason/Regular Season)
-- Filter by team, month, or broadcast type
-- View game details including venue, date/time, and TV broadcasts
-- Clean, responsive interface using Bootstrap
-- No external dependencies (Bootstrap loaded from CDN)
+- 🏀 Team logos displayed with each game
+- 📅 Filter by season type (Preseason/Regular Season)
+- 🏆 Filter by team, month, or broadcast type
+- 📺 View game details including venue, date/time, and TV broadcasts
+- 🎨 Clean, responsive interface using Bootstrap
+- 💾 Logos persisted locally in `logos/` folder
 
-**Note:** Make sure to run `ruby fetch_schedule.rb` first to generate the JSON data file.
+**Note:** Logos are downloaded from ESPN's CDN and cached locally for fast loading.
 
 ## Output Formats
 

@@ -51,6 +51,20 @@
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .team-logo {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+        .team-info {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
         }
         .game-details {
             font-size: 0.9rem;
@@ -151,6 +165,18 @@
         let allGames = [];
         let teams = new Set();
         let months = new Set();
+
+        // Helper function to extract team tricode
+        function getTeamTricode(teamString) {
+            if (!teamString) return null;
+            const match = teamString.match(/^(\w+)/);
+            return match ? match[0] : null;
+        }
+
+        // Helper function to get logo path
+        function getLogoPath(tricode) {
+            return tricode ? `logos/${tricode}.png` : '';
+        }
 
         // Load the JSON data
         async function loadSchedule() {
@@ -327,6 +353,17 @@
                 
                 const awayTeam = game.away_team || 'TBD';
                 const homeTeam = game.home_team || 'TBD';
+                const awayTricode = getTeamTricode(game.away_team);
+                const homeTricode = getTeamTricode(game.home_team);
+                
+                // Build team display with logos
+                const awayTeamDisplay = awayTricode 
+                    ? `<span class="team-info"><img src="${getLogoPath(awayTricode)}" alt="${awayTricode}" class="team-logo" onerror="this.style.display='none'">${awayTeam}</span>`
+                    : awayTeam;
+                
+                const homeTeamDisplay = homeTricode
+                    ? `<span class="team-info"><img src="${getLogoPath(homeTricode)}" alt="${homeTricode}" class="team-logo" onerror="this.style.display='none'">${homeTeam}</span>`
+                    : homeTeam;
                 
                 let tvInfo = '';
                 if (game.national_tv) {
@@ -346,7 +383,7 @@
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="flex-grow-1">
                                 <div class="team-matchup">
-                                    ${awayTeam} <span class="text-muted">@</span> ${homeTeam}
+                                    ${awayTeamDisplay} <span class="text-muted">@</span> ${homeTeamDisplay}
                                 </div>
                                 <div class="game-details">
                                     📅 ${dateStr} • 🕐 ${timeStr}
