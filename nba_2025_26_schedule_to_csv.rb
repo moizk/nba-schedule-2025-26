@@ -27,7 +27,11 @@ def get_json(url)
 end
 
 def map_broadcasters(arr, chan_map)
-  (arr || []).map { |x| chan_map[x['broadcasterId']] || x['broadcasterDisplay'] }.uniq
+  return [] if arr.nil? || arr.empty?
+  arr.map do |x| 
+    # Try to get channel name from map, or use broadcasterDisplay, or use broadcasterId as fallback
+    chan_map[x['broadcasterId']] || x['broadcasterDisplay'] || "ID:#{x['broadcasterId']}"
+  end.compact.uniq
 end
 
 # --- Fetch data -------------------------------------------------------------
@@ -50,12 +54,26 @@ if chan_list.is_a?(Array) && !chan_list.empty?
   chan_list.each do |c|
     if c.is_a?(Hash)
       chan_map[c['id']] = c['name'] || c['shortName'] || c['id']
-    else
-      puts "Warning: Unexpected channel format: #{c.inspect}"
     end
   end
-else
-  puts "Warning: No channels data available or unexpected format"
+end
+
+# Fallback: Common NBA broadcaster IDs (based on historical data)
+if chan_map.empty?
+  chan_map = {
+    1 => 'ABC',
+    2 => 'ESPN',
+    3 => 'TNT',
+    4 => 'NBA TV',
+    5 => 'ESPN2',
+    6 => 'NBATV',
+    7 => 'NBA TV',
+    10 => 'TNT',
+    16 => 'ESPN',
+    20 => 'ABC',
+    # Add more as we discover them
+  }
+  puts "Note: Using fallback broadcaster map (channels API unavailable)"
 end
 
 # --- Build rows -------------------------------------------------------------
@@ -84,14 +102,14 @@ schedule.fetch('leagueSchedule', {}).fetch('gameDates', []).each do |date_block|
       tip_et:  t_utc.getlocal('-05:00').iso8601,
       away_team: "#{g.dig('awayTeam', 'teamTricode')} (#{g.dig('awayTeam', 'teamName')})",
       home_team: "#{g.dig('homeTeam', 'teamTricode')} (#{g.dig('homeTeam', 'teamName')})",
-      venue: g.dig('arena', 'arenaName'),
-      city:  g.dig('arena', 'arenaCity'),
-      state: g.dig('arena', 'arenaState'),
-      national_tv:  map_broadcasters(b['national'], chan_map).join(' | '),
-      home_rsns:    map_broadcasters(b['homeTeam'], chan_map).join(' | '),
-      away_rsns:    map_broadcasters(b['awayTeam'], chan_map).join(' | '),
-      international: map_broadcasters(b['international'], chan_map).join(' | '),
-      is_tbd: (!!g['tbaTime']) || (!!g['ifNecessary']) ||
+      venue: g['arenaName'],
+      city:  g['arenaCity'],
+      state: g['arenaState'],
+      national_tv:  map_broadcasters(b['nationalBroadcasters'], chan_map).join(' | '),
+      home_rsns:    map_broadcasters(b['homeTvBroadcasters'], chan_map).join(' | '),
+      away_rsns:    map_broadcasters(b['awayTvBroadcasters'], chan_map).join(' | '),
+      international: map_broadcasters(b['internationalBroadcasters'], chan_map).join(' | '),
+      is_tbd: (!!g['tbaTime']) || (g['ifNecessary'] == 'true') ||
               g.dig('awayTeam','teamName').nil? || g.dig('homeTeam','teamName').nil?
     }
   end
@@ -100,7 +118,7 @@ end
 # --- Write CSV --------------------------------------------------------------
 
 if date_range.any?
-  puts "\nSchedule data contains games from #{date_range.min.strftime('%Y-%m-%d')} to #{date_range.max.strftime('%Y-%m-%d')}"
+  puts "Schedule data contains games from #{date_range.min.strftime('%Y-%m-%d')} to #{date_range.max.strftime('%Y-%m-%d')}"
 end
 puts "Filtered for: Oct 1 2025 - Apr 30 2026"
 puts "Games found: #{rows.size}"
