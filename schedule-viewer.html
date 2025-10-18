@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA 2025-26 Schedule Viewer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #1d428a 0%, #c8102e 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .stats-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .filter-section {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .game-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .game-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .badge-preseason {
+            background-color: #6c757d;
+        }
+        .badge-regular {
+            background-color: #1d428a;
+        }
+        .team-matchup {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .game-details {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .tv-info {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+        }
+        .national-tv {
+            color: #c8102e;
+            font-weight: 600;
+        }
+        .loading {
+            text-align: center;
+            padding: 3rem;
+        }
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="mb-0">🏀 NBA 2025-26 Schedule</h1>
+            <p class="mb-0 mt-2">Complete Preseason & Regular Season Schedule</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Stats Summary -->
+        <div id="stats-summary" class="row mb-4"></div>
+
+        <!-- Filters -->
+        <div class="filter-section">
+            <h5 class="mb-3">Filter Games</h5>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label class="form-label">Season Type</label>
+                    <select id="seasonTypeFilter" class="form-select">
+                        <option value="all">All Games</option>
+                        <option value="Preseason">Preseason</option>
+                        <option value="Regular Season" selected>Regular Season</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Team</label>
+                    <select id="teamFilter" class="form-select">
+                        <option value="all">All Teams</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Month</label>
+                    <select id="monthFilter" class="form-select">
+                        <option value="all">All Months</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Broadcast</label>
+                    <select id="broadcastFilter" class="form-select">
+                        <option value="all">All Games</option>
+                        <option value="national">National TV Only</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loading" class="loading">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3">Loading schedule data...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="alert alert-danger" style="display: none;"></div>
+
+        <!-- Games Container -->
+        <div id="games-container"></div>
+
+        <!-- No Results -->
+        <div id="no-results" class="no-results" style="display: none;">
+            <h4>No games found</h4>
+            <p>Try adjusting your filters</p>
+        </div>
+    </div>
+
+    <script>
+        let scheduleData = null;
+        let allGames = [];
+        let teams = new Set();
+        let months = new Set();
+
+        // Load the JSON data
+        async function loadSchedule() {
+            try {
+                console.log('Fetching schedule data...');
+                const response = await fetch('nba_2025_26_schedule.json');
+                console.log('Response status:', response.status);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                
+                scheduleData = await response.json();
+                console.log('Schedule data loaded:', scheduleData);
+                
+                if (!scheduleData || !scheduleData.games) {
+                    throw new Error('Invalid schedule data structure');
+                }
+                
+                allGames = scheduleData.games;
+                
+                // Extract unique teams and months
+                allGames.forEach(game => {
+                    // Extract team tricodes (skip if null/undefined)
+                    if (game.away_team) {
+                        const awayMatch = game.away_team.match(/^(\w+)/);
+                        if (awayMatch) teams.add(awayMatch[0]);
+                    }
+                    if (game.home_team) {
+                        const homeMatch = game.home_team.match(/^(\w+)/);
+                        if (homeMatch) teams.add(homeMatch[0]);
+                    }
+                    
+                    // Extract month
+                    if (game.tip_utc) {
+                        const date = new Date(game.tip_utc);
+                        const monthYear = date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+                        months.add(monthYear);
+                    }
+                });
+                
+                renderStats();
+                populateFilters();
+                renderGames();
+                
+                document.getElementById('loading').style.display = 'none';
+            } catch (error) {
+                console.error('Error loading schedule:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').innerHTML = `
+                    <strong>Error loading schedule data</strong><br>
+                    ${error.message}<br><br>
+                    <small>Make sure you're running a local web server (e.g., <code>python3 -m http.server 8000</code>) 
+                    and that nba_2025_26_schedule.json exists in the same directory.</small>
+                `;
+            }
+        }
+
+        function renderStats() {
+            const statsHtml = `
+                <div class="col-md-3">
+                    <div class="stats-card text-center">
+                        <h3 class="text-primary">${scheduleData.total_games}</h3>
+                        <p class="mb-0">Total Games</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card text-center">
+                        <h3 class="text-secondary">${scheduleData.preseason_games}</h3>
+                        <p class="mb-0">Preseason</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card text-center">
+                        <h3 class="text-primary">${scheduleData.regular_season_games}</h3>
+                        <p class="mb-0">Regular Season</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card text-center">
+                        <h3 class="text-danger">${scheduleData.regular_season_start_date}</h3>
+                        <p class="mb-0">Season Starts</p>
+                    </div>
+                </div>
+            `;
+            document.getElementById('stats-summary').innerHTML = statsHtml;
+        }
+
+        function populateFilters() {
+            // Populate team filter
+            const teamSelect = document.getElementById('teamFilter');
+            Array.from(teams).sort().forEach(team => {
+                const option = document.createElement('option');
+                option.value = team;
+                option.textContent = team;
+                teamSelect.appendChild(option);
+            });
+
+            // Populate month filter
+            const monthSelect = document.getElementById('monthFilter');
+            Array.from(months).sort((a, b) => new Date(a) - new Date(b)).forEach(month => {
+                const option = document.createElement('option');
+                option.value = month;
+                option.textContent = month;
+                monthSelect.appendChild(option);
+            });
+
+            // Add event listeners
+            document.getElementById('seasonTypeFilter').addEventListener('change', renderGames);
+            document.getElementById('teamFilter').addEventListener('change', renderGames);
+            document.getElementById('monthFilter').addEventListener('change', renderGames);
+            document.getElementById('broadcastFilter').addEventListener('change', renderGames);
+        }
+
+        function filterGames() {
+            const seasonType = document.getElementById('seasonTypeFilter').value;
+            const team = document.getElementById('teamFilter').value;
+            const month = document.getElementById('monthFilter').value;
+            const broadcast = document.getElementById('broadcastFilter').value;
+
+            return allGames.filter(game => {
+                // Season type filter
+                if (seasonType !== 'all' && game.season_type !== seasonType) return false;
+
+                // Team filter
+                if (team !== 'all') {
+                    const awayMatch = game.away_team ? game.away_team.match(/^(\w+)/) : null;
+                    const homeMatch = game.home_team ? game.home_team.match(/^(\w+)/) : null;
+                    const awayTeam = awayMatch ? awayMatch[0] : null;
+                    const homeTeam = homeMatch ? homeMatch[0] : null;
+                    if (awayTeam !== team && homeTeam !== team) return false;
+                }
+
+                // Month filter
+                if (month !== 'all' && game.tip_utc) {
+                    const date = new Date(game.tip_utc);
+                    const gameMonth = date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+                    if (gameMonth !== month) return false;
+                }
+
+                // Broadcast filter
+                if (broadcast === 'national' && !game.national_tv) return false;
+
+                return true;
+            });
+        }
+
+        function renderGames() {
+            const filteredGames = filterGames();
+            const container = document.getElementById('games-container');
+            const noResults = document.getElementById('no-results');
+
+            if (filteredGames.length === 0) {
+                container.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+
+            const gamesHtml = filteredGames.map(game => {
+                const date = new Date(game.tip_et || game.tip_utc);
+                const dateStr = date.toLocaleDateString('en-US', { 
+                    weekday: 'short', 
+                    month: 'short', 
+                    day: 'numeric',
+                    year: 'numeric'
+                });
+                const timeStr = game.is_tbd ? 'TBD' : date.toLocaleTimeString('en-US', { 
+                    hour: 'numeric', 
+                    minute: '2-digit',
+                    timeZoneName: 'short'
+                });
+
+                const badgeClass = game.season_type === 'Preseason' ? 'badge-preseason' : 'badge-regular';
+                
+                const awayTeam = game.away_team || 'TBD';
+                const homeTeam = game.home_team || 'TBD';
+                
+                let tvInfo = '';
+                if (game.national_tv) {
+                    tvInfo += `<div class="national-tv">📺 ${game.national_tv}</div>`;
+                }
+                if (game.home_rsns || game.away_rsns) {
+                    const rsns = [game.home_rsns, game.away_rsns].filter(x => x).join(' | ');
+                    tvInfo += `<div>📡 ${rsns}</div>`;
+                }
+
+                const venue = game.venue || 'TBD';
+                const city = game.city || 'TBD';
+                const location = `${venue}, ${city}${game.state ? ', ' + game.state : ''}`;
+
+                return `
+                    <div class="game-card">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="flex-grow-1">
+                                <div class="team-matchup">
+                                    ${awayTeam} <span class="text-muted">@</span> ${homeTeam}
+                                </div>
+                                <div class="game-details">
+                                    📅 ${dateStr} • 🕐 ${timeStr}
+                                    <br>
+                                    📍 ${location}
+                                </div>
+                                ${tvInfo ? `<div class="tv-info">${tvInfo}</div>` : ''}
+                            </div>
+                            <div>
+                                <span class="badge ${badgeClass}">${game.season_type}</span>
+                                ${game.is_tbd ? '<br><span class="badge bg-warning text-dark mt-1">TBD</span>' : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = `
+                <div class="mb-3">
+                    <strong>${filteredGames.length}</strong> game${filteredGames.length !== 1 ? 's' : ''} found
+                </div>
+                ${gamesHtml}
+            `;
+        }
+
+        // Load data when page loads
+        loadSchedule();
+    </script>
+</body>
+</html>
+

@@ -16,6 +16,33 @@ The data includes:
 - **Preseason games:** October 2-20, 2025
 - **Regular season games:** October 21, 2025 - April 2026
 
+## Web Viewer
+
+A simple HTML viewer is included to browse the schedule data.
+
+**To use the viewer:**
+
+Due to browser CORS restrictions, you need to run a local web server:
+
+```bash
+# Start a local web server
+python3 -m http.server 8000
+
+# Then open in your browser:
+# http://localhost:8000/schedule-viewer.html
+```
+
+Alternatively, use any other local web server of your choice.
+
+**Features:**
+- Filter by season type (Preseason/Regular Season)
+- Filter by team, month, or broadcast type
+- View game details including venue, date/time, and TV broadcasts
+- Clean, responsive interface using Bootstrap
+- No external dependencies (Bootstrap loaded from CDN)
+
+**Note:** Make sure to run `ruby fetch_schedule.rb` first to generate the JSON data file.
+
 ## Output Formats
 
 ### CSV Columns
