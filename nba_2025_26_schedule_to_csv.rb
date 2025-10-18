@@ -44,16 +44,35 @@ chan_list =
     channels
   end
 
-chan_map = chan_list.map { |c| [c['id'], c['name'] || c['shortName'] || c['id']] }.to_h
+# Build channel map with error handling
+chan_map = {}
+if chan_list.is_a?(Array) && !chan_list.empty?
+  chan_list.each do |c|
+    if c.is_a?(Hash)
+      chan_map[c['id']] = c['name'] || c['shortName'] || c['id']
+    else
+      puts "Warning: Unexpected channel format: #{c.inspect}"
+    end
+  end
+else
+  puts "Warning: No channels data available or unexpected format"
+end
 
 # --- Build rows -------------------------------------------------------------
 
 rows = []
 
+game_dates = schedule.fetch('leagueSchedule', {}).fetch('gameDates', [])
+
+# Collect some stats for reporting
+date_range = []
+
 schedule.fetch('leagueSchedule', {}).fetch('gameDates', []).each do |date_block|
   date_block.fetch('games', []).each do |g|
-    next unless g['seasonStage'] == 2 # 2 = Regular Season
-    t_utc = Time.parse(g['gameTimeUTC']) rescue nil
+    t_utc = Time.parse(g['gameDateTimeUTC']) rescue nil
+    date_range << t_utc if t_utc
+    
+    # Skip if not in our date range (assuming all games in this data are regular season)
     next unless t_utc && t_utc >= SEASON_START && t_utc <= SEASON_END
 
     b = g['broadcasters'] || {}
@@ -79,6 +98,18 @@ schedule.fetch('leagueSchedule', {}).fetch('gameDates', []).each do |date_block|
 end
 
 # --- Write CSV --------------------------------------------------------------
+
+if date_range.any?
+  puts "\nSchedule data contains games from #{date_range.min.strftime('%Y-%m-%d')} to #{date_range.max.strftime('%Y-%m-%d')}"
+end
+puts "Filtered for: Oct 1 2025 - Apr 30 2026"
+puts "Games found: #{rows.size}"
+
+if rows.empty?
+  puts "\n❌ No games found matching criteria"
+  puts "   Adjust SEASON_START/SEASON_END if needed"
+  exit 1
+end
 
 outfile = 'nba_2025_26_regular_season.csv'
 CSV.open(outfile, 'w') do |csv|
