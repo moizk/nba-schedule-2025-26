@@ -1,75 +1,75 @@
 game_id,season_type,tip_utc,tip_et,away_team,home_team,venue,city,state,national_tv,home_rsns,away_rsns,international,is_tbd
-0012500008,Regular Season,2025-10-02T16:00:00Z,2025-10-02T11:00:00-05:00,PHI (76ers),NYK (Knicks),Etihad Arena,Abu Dhabi,"",NBA TV,MSG,"","",false
-0012500001,Regular Season,2025-10-04T02:00:00Z,2025-10-03T21:00:00-05:00,PHX (Suns),LAL (Lakers),Acrisure Arena,Palm Desert,CA,NBA TV,Spectrum SportsNet,Arizona's Family 3TV / Arizona's Family Sports,"",false
-0012500009,Regular Season,2025-10-03T09:30:00Z,2025-10-03T04:30:00-05:00,MEL (United),NOP (Pelicans),Rod Laver Arena,Melbourne,"",NBA TV,GCSEN,"","",false
-0012500010,Regular Season,2025-10-04T15:00:00Z,2025-10-04T10:00:00-05:00,NYK (Knicks),PHI (76ers),Etihad Arena,Abu Dhabi,"",NBA TV,"",MSG,"",false
-0012500011,Regular Season,2025-10-05T03:00:00Z,2025-10-04T22:00:00-05:00,SEM (Phoenix),NOP (Pelicans),Rod Laver Arena,Melbourne,"",NBA TV,GCSEN,"","",false
-0012500026,Regular Season,2025-10-05T00:00:00Z,2025-10-04T19:00:00-05:00,HAP (Jerusalem B.C.),BKN (Nets),Barclays Center,Brooklyn,NY,"",YES,"","",false
-0012500027,Regular Season,2025-10-05T00:00:00Z,2025-10-04T19:00:00-05:00,ORL (Magic),MIA (Heat),Coliseo de Puerto Rico,"San Juan,Puerto Rico","",NBA TV,FanDuel Sports Network - Sun,FanDuel Sports Network - Florida,"",false
-0012500028,Regular Season,2025-10-05T01:00:00Z,2025-10-04T20:00:00-05:00,MIN (Timberwolves),DEN (Nuggets),Pechanga Arena,San Diego,CA,"",Altitude,"","",false
-0012500029,Regular Season,2025-10-05T21:00:00Z,2025-10-05T16:00:00-05:00,OKC (Thunder),CHA (Hornets),North Charleston Coliseum,Charleston,SC,"","",Thunder App,"",false
-0012500030,Regular Season,2025-10-06T00:30:00Z,2025-10-05T19:30:00-05:00,LAL (Lakers),GSW (Warriors),Chase Center,San Francisco,CA,ESPN,NBCSBA,Spectrum SportsNet,"",false
-0012500002,Regular Season,2025-10-06T23:30:00Z,2025-10-06T18:30:00-05:00,MIL (Bucks),MIA (Heat),Kaseya Center,Miami,FL,"",FanDuel Sports Network - Sun,FanDuel Sports Network - Wisconsin,"",false
-0012500014,Regular Season,2025-10-07T00:00:00Z,2025-10-06T19:00:00-05:00,ATL (Hawks),HOU (Rockets),Toyota Center,Houston,TX,"",Space City Home Network,FanDuel Sports Network - Southeast - Atlanta,"",false
-0012500031,Regular Season,2025-10-07T00:00:00Z,2025-10-06T19:00:00-05:00,DET (Pistons),MEM (Grizzlies),FedExForum,Memphis,TN,"",FanDuel Sports Network - Southeast - Memphis,FanDuel Sports Network - Detroit,"",false
-0012500032,Regular Season,2025-10-07T00:00:00Z,2025-10-06T19:00:00-05:00,GUA (Loong-Lions),SAS (Spurs),Frost Bank Center,San Antonio,TX,"",CWSA,"","",false
-0012500033,Regular Season,2025-10-07T00:30:00Z,2025-10-06T19:30:00-05:00,OKC (Thunder),DAL (Mavericks),Dickies Arena,Fort Worth,TX,NBA TV,KFAA,FDSNOK/KSBI,"",false
-0012500034,Regular Season,2025-10-07T02:00:00Z,2025-10-06T21:00:00-05:00,DEN (Nuggets),TOR (Raptors),Rogers Arena,Vancouver,BC,"",TSN,"","",false
-0012500035,Regular Season,2025-10-07T23:00:00Z,2025-10-07T18:00:00-05:00,CHI (Bulls),CLE (Cavaliers),Rocket Arena,Cleveland,OH,Peacock,FanDuel Sports Network - Ohio,Chicago Sports Network,"",false
-0012500036,Regular Season,2025-10-08T00:00:00Z,2025-10-07T19:00:00-05:00,IND (Pacers),MIN (Timberwolves),Target Center,Minneapolis,MN,"",FanDuel Sports Network - North,FanDuel Sports Network - Indiana,"",false
-0012500003,Regular Season,2025-10-08T23:30:00Z,2025-10-08T18:30:00-05:00,SAS (Spurs),MIA (Heat),Kaseya Center,Miami,FL,NBA TV,FanDuel Sports Network - Sun,CWSA,"",false
-0012500015,Regular Season,2025-10-09T02:00:00Z,2025-10-08T21:00:00-05:00,POR (Trail Blazers),GSW (Warriors),Chase Center,San Francisco,CA,NBA TV,NBCSBA,KUNP,"",false
-0012500016,Regular Season,2025-10-09T02:00:00Z,2025-10-08T21:00:00-05:00,TOR (Raptors),SAC (Kings),Golden 1 Center,Sacramento,CA,"",Kings.com/live,TSN,"",false
-0012500037,Regular Season,2025-10-09T00:00:00Z,2025-10-08T19:00:00-05:00,UTA (Jazz),HOU (Rockets),Toyota Center,Houston,TX,"",Space City Home Network,KJZZ,"",false
-0012500038,Regular Season,2025-10-09T00:00:00Z,2025-10-08T19:00:00-05:00,BOS (Celtics),MEM (Grizzlies),FedExForum,Memphis,TN,"",FanDuel Sports Network - Southeast - Memphis,NBC SPORTS BOSTON,"",false
-0012500039,Regular Season,2025-10-09T23:30:00Z,2025-10-09T18:30:00-05:00,MIN (Timberwolves),NYK (Knicks),Madison Square Garden,New York,NY,NBA TV,MSG 2,"","",false
-0012500040,Regular Season,2025-10-10T00:00:00Z,2025-10-09T19:00:00-05:00,CLE (Cavaliers),CHI (Bulls),United Center,Chicago,IL,"",Chicago Sports Network Plus,FanDuel Sports Network - Ohio,"",false
-0012500041,Regular Season,2025-10-10T00:00:00Z,2025-10-09T19:00:00-05:00,DET (Pistons),MIL (Bucks),Fiserv Forum,Milwaukee,WI,"",FanDuel Sports Network - Wisconsin,FanDuel Sports Network - Detroit,"",false
-0012500042,Regular Season,2025-10-10T00:00:00Z,2025-10-09T19:00:00-05:00,CHA (Hornets),OKC (Thunder),Paycom Center,Oklahoma City,OK,"",FDSNOK/KSBI,FanDuel Sports Network - Southeast - Charlotte,"",false
-0012500043,Regular Season,2025-10-10T02:30:00Z,2025-10-09T21:30:00-05:00,GUA (Loong-Lions),LAC (Clippers),Frontwave Arena,Oceanside,CA,"","","","",false
-0012500012,Regular Season,2025-10-10T12:00:00Z,2025-10-10T07:00:00-05:00,PHX (Suns),BKN (Nets),Venetian Arena,"Macao, China","",NBA TV,"",Arizona's Family Sports,"",false
-0012500017,Regular Season,2025-10-11T02:00:00Z,2025-10-10T21:00:00-05:00,SAC (Kings),POR (Trail Blazers),Moda Center,Portland,OR,"","",Kings.com/live,"",false
-0012500044,Regular Season,2025-10-10T23:00:00Z,2025-10-10T18:00:00-05:00,BOS (Celtics),TOR (Raptors),Scotiabank Arena,Toronto,ON,"",SN,NBC SPORTS BOSTON,"",false
-0012500045,Regular Season,2025-10-11T00:00:00Z,2025-10-10T19:00:00-05:00,UTA (Jazz),SAS (Spurs),Frost Bank Center,San Antonio,TX,"",News 4 San Antonio,KJZZ,"",false
-0012500070,Regular Season,2025-10-10T23:00:00Z,2025-10-10T18:00:00-05:00,ORL (Magic),PHI (76ers),Xfinity Mobile Arena,Philadelphia,PA,NBA TV,NBC Sports Philadelphia,"","",false
-0012500018,Regular Season,2025-10-12T00:00:00Z,2025-10-11T19:00:00-05:00,ATL (Hawks),MEM (Grizzlies),FedExForum,Memphis,TN,"",FanDuel Sports Network - Southeast - Memphis,FanDuel Sports Network - Southeast - Atlanta,"",false
-0012500046,Regular Season,2025-10-11T23:00:00Z,2025-10-11T18:00:00-05:00,OKC (Thunder),IND (Pacers),Gainbridge Fieldhouse,Indianapolis,IN,NBA TV,FanDuel Sports Network - Indiana,FanDuel Sports Network - Oklahoma,"",false
-0012500047,Regular Season,2025-10-12T00:30:00Z,2025-10-11T19:30:00-05:00,CHA (Hornets),DAL (Mavericks),American Airlines Center,Dallas,TX,"",KFAA,"","",false
-0012500004,Regular Season,2025-10-13T01:30:00Z,2025-10-12T20:30:00-05:00,GSW (Warriors),LAL (Lakers),Crypto.com Arena,Los Angeles,CA,"",Spectrum SportsNet,"","",false
-0012500013,Regular Season,2025-10-12T11:00:00Z,2025-10-12T06:00:00-05:00,BKN (Nets),PHX (Suns),Venetian Arena,"Macao, China","",NBA TV,Arizona's Family Sports,"","",false
-0012500048,Regular Season,2025-10-12T19:00:00Z,2025-10-12T14:00:00-05:00,TOR (Raptors),WAS (Wizards),Capital One Arena,Washington,DC,NBA TV,Monumental Sports Network,SN,"",false
-0012500049,Regular Season,2025-10-12T22:00:00Z,2025-10-12T17:00:00-05:00,MIA (Heat),ORL (Magic),Kia Center,Orlando,FL,"",FanDuel Sports Network - Florida,FanDuel Sports Network - Sun,"",false
-0012500050,Regular Season,2025-10-12T23:00:00Z,2025-10-12T18:00:00-05:00,CLE (Cavaliers),BOS (Celtics),TD Garden,Boston,MA,ESPN,NBC SPORTS BOSTON,FanDuel Sports Network - Ohio,"",false
-0012500051,Regular Season,2025-10-12T23:00:00Z,2025-10-12T18:00:00-05:00,MIL (Bucks),CHI (Bulls),United Center,Chicago,IL,"",Chicago Sports Network,FanDuel Sports Network - Wisconsin,"",false
-0012500052,Regular Season,2025-10-13T01:30:00Z,2025-10-12T20:30:00-05:00,DEN (Nuggets),LAC (Clippers),Intuit Dome,Inglewood,CA,ESPN,FanDuel Sports Network - SoCal/KTLA,"","",false
-0012500019,Regular Season,2025-10-13T22:00:00Z,2025-10-13T17:00:00-05:00,MIA (Heat),ATL (Hawks),State Farm Arena,Atlanta,GA,NBA TV,FanDuel Sports Network - Southeast - Atlanta,FanDuel Sports Network - Sun,"",false
-0012500053,Regular Season,2025-10-13T23:00:00Z,2025-10-13T18:00:00-05:00,SAS (Spurs),IND (Pacers),Gainbridge Fieldhouse,Indianapolis,IN,"",FanDuel Sports Network - Indiana,CWSA,"",false
-0012500054,Regular Season,2025-10-13T23:30:00Z,2025-10-13T18:30:00-05:00,WAS (Wizards),NYK (Knicks),Madison Square Garden,New York,NY,"",MSG,Monumental Sports Network,"",false
-0012500055,Regular Season,2025-10-14T00:00:00Z,2025-10-13T19:00:00-05:00,GUA (Loong-Lions),MIN (Timberwolves),Target Center,Minneapolis,MN,"","","","",false
-0012500056,Regular Season,2025-10-14T01:00:00Z,2025-10-13T20:00:00-05:00,DAL (Mavericks),UTA (Jazz),Delta Center,Salt Lake City,UT,NBA TV,KJZZ,KFAA,"",false
-0012500020,Regular Season,2025-10-15T00:00:00Z,2025-10-14T19:00:00-05:00,HOU (Rockets),NOP (Pelicans),Legacy Arena at the BJCC,Birmingham,AL,"",GCSEN,Space City Home Network,"",false
-0012500021,Regular Season,2025-10-15T02:00:00Z,2025-10-14T21:00:00-05:00,GSW (Warriors),POR (Trail Blazers),Moda Center,Portland,OR,"",KUNP,"","",false
-0012500057,Regular Season,2025-10-14T23:00:00Z,2025-10-14T18:00:00-05:00,DET (Pistons),CLE (Cavaliers),Rocket Arena,Cleveland,OH,"",FanDuel Sports Network - Ohio,FanDuel Sports Network - Detroit,"",false
-0012500058,Regular Season,2025-10-15T00:00:00Z,2025-10-14T19:00:00-05:00,OKC (Thunder),MIL (Bucks),Fiserv Forum,Milwaukee,WI,Peacock,FanDuel Sports Network - Wisconsin,"","",false
-0012500059,Regular Season,2025-10-15T01:00:00Z,2025-10-14T20:00:00-05:00,CHI (Bulls),DEN (Nuggets),Ball Arena,Denver,CO,"","",Chicago Sports Network,"",false
-0012500060,Regular Season,2025-10-15T02:00:00Z,2025-10-14T21:00:00-05:00,LAL (Lakers),PHX (Suns),Mortgage Matchup Center,Phoenix,AZ,"",Arizona's Family 3TV / Arizona's Family Sports,Spectrum SportsNet,"",false
-0012500005,Regular Season,2025-10-16T02:30:00Z,2025-10-15T21:30:00-05:00,DAL (Mavericks),LAL (Lakers),T-Mobile Arena,Las Vegas,NV,ESPN,Spectrum SportsNet,KFAA,"",false
-0012500022,Regular Season,2025-10-16T02:00:00Z,2025-10-15T21:00:00-05:00,LAC (Clippers),SAC (Kings),Golden 1 Center,Sacramento,CA,"",NBCSCA,"","",false
-0012500061,Regular Season,2025-10-15T23:00:00Z,2025-10-15T18:00:00-05:00,MEM (Grizzlies),CHA (Hornets),First Horizon Coliseum,Greensboro,NC,"",FanDuel Sports Network - Southeast - Charlotte,FanDuel Sports Network - Southeast - Memphis,"",false
-0012500062,Regular Season,2025-10-15T23:30:00Z,2025-10-15T18:30:00-05:00,TOR (Raptors),BOS (Celtics),TD Garden,Boston,MA,NBA TV,NBC SPORTS BOSTON,TSN,"",false
-0012500023,Regular Season,2025-10-16T23:00:00Z,2025-10-16T18:00:00-05:00,NOP (Pelicans),ORL (Magic),Kia Center,Orlando,FL,"",FanDuel Sports Network - Florida,Pelicans.com,"",false
-0012500024,Regular Season,2025-10-16T23:30:00Z,2025-10-16T18:30:00-05:00,HOU (Rockets),ATL (Hawks),State Farm Arena,Atlanta,GA,ESPN2,"",Space City Home Network,"",false
-0012500025,Regular Season,2025-10-17T01:00:00Z,2025-10-16T20:00:00-05:00,POR (Trail Blazers),UTA (Jazz),Delta Center,Salt Lake City,UT,"",KJZZ,"","",false
-0012500063,Regular Season,2025-10-16T23:00:00Z,2025-10-16T18:00:00-05:00,WAS (Wizards),DET (Pistons),Little Caesars Arena,Detroit,MI,"",FanDuel Sports Network - Detroit,Monumental Sports Network,"",false
-0012500064,Regular Season,2025-10-17T00:00:00Z,2025-10-16T19:00:00-05:00,MIN (Timberwolves),CHI (Bulls),United Center,Chicago,IL,"",Chicago Sports Network,FanDuel Sports Network - North,"",false
-0012500006,Regular Season,2025-10-18T00:00:00Z,2025-10-17T19:00:00-05:00,MEM (Grizzlies),MIA (Heat),Kaseya Center,Miami,FL,"",FanDuel Sports Network - Sun,FanDuel Sports Network - Southeast - Memphis,"",false
-0012500007,Regular Season,2025-10-18T02:30:00Z,2025-10-17T21:30:00-05:00,SAC (Kings),LAL (Lakers),Crypto.com Arena,Los Angeles,CA,NBA TV,Spectrum SportsNet,Kings.com/live,"",false
-0012500065,Regular Season,2025-10-17T23:00:00Z,2025-10-17T18:00:00-05:00,BKN (Nets),TOR (Raptors),Scotiabank Arena,Toronto,ON,"",TSN,YES,"",false
-0012500066,Regular Season,2025-10-17T23:30:00Z,2025-10-17T18:30:00-05:00,CHA (Hornets),NYK (Knicks),Madison Square Garden,New York,NY,"",MSG,"","",false
-0012500067,Regular Season,2025-10-18T00:00:00Z,2025-10-17T19:00:00-05:00,DEN (Nuggets),OKC (Thunder),Paycom Center,Oklahoma City,OK,NBA TV,FDSNOK/KSBI,"","",false
-0012500068,Regular Season,2025-10-18T00:00:00Z,2025-10-17T19:00:00-05:00,IND (Pacers),SAS (Spurs),Frost Bank Center,San Antonio,TX,"",FanDuel Sports Network - Southwest,FanDuel Sports Network - Indiana,"",false
-0012500069,Regular Season,2025-10-18T02:00:00Z,2025-10-17T21:00:00-05:00,LAC (Clippers),GSW (Warriors),Chase Center,San Francisco,CA,"",NBCSBA,"","",false
-0012500071,Regular Season,2025-10-17T23:00:00Z,2025-10-17T18:00:00-05:00,MIN (Timberwolves),PHI (76ers),Xfinity Mobile Arena,Philadelphia,PA,"",NBC Sports Philadelphia,"","",false
+0012500008,Preseason,2025-10-02T16:00:00Z,2025-10-02T11:00:00-05:00,PHI (76ers),NYK (Knicks),Etihad Arena,Abu Dhabi,"",NBA TV,MSG,"","",false
+0012500001,Preseason,2025-10-04T02:00:00Z,2025-10-03T21:00:00-05:00,PHX (Suns),LAL (Lakers),Acrisure Arena,Palm Desert,CA,NBA TV,Spectrum SportsNet,Arizona's Family 3TV / Arizona's Family Sports,"",false
+0012500009,Preseason,2025-10-03T09:30:00Z,2025-10-03T04:30:00-05:00,MEL (United),NOP (Pelicans),Rod Laver Arena,Melbourne,"",NBA TV,GCSEN,"","",false
+0012500010,Preseason,2025-10-04T15:00:00Z,2025-10-04T10:00:00-05:00,NYK (Knicks),PHI (76ers),Etihad Arena,Abu Dhabi,"",NBA TV,"",MSG,"",false
+0012500011,Preseason,2025-10-05T03:00:00Z,2025-10-04T22:00:00-05:00,SEM (Phoenix),NOP (Pelicans),Rod Laver Arena,Melbourne,"",NBA TV,GCSEN,"","",false
+0012500026,Preseason,2025-10-05T00:00:00Z,2025-10-04T19:00:00-05:00,HAP (Jerusalem B.C.),BKN (Nets),Barclays Center,Brooklyn,NY,"",YES,"","",false
+0012500027,Preseason,2025-10-05T00:00:00Z,2025-10-04T19:00:00-05:00,ORL (Magic),MIA (Heat),Coliseo de Puerto Rico,"San Juan,Puerto Rico","",NBA TV,FanDuel Sports Network - Sun,FanDuel Sports Network - Florida,"",false
+0012500028,Preseason,2025-10-05T01:00:00Z,2025-10-04T20:00:00-05:00,MIN (Timberwolves),DEN (Nuggets),Pechanga Arena,San Diego,CA,"",Altitude,"","",false
+0012500029,Preseason,2025-10-05T21:00:00Z,2025-10-05T16:00:00-05:00,OKC (Thunder),CHA (Hornets),North Charleston Coliseum,Charleston,SC,"","",Thunder App,"",false
+0012500030,Preseason,2025-10-06T00:30:00Z,2025-10-05T19:30:00-05:00,LAL (Lakers),GSW (Warriors),Chase Center,San Francisco,CA,ESPN,NBCSBA,Spectrum SportsNet,"",false
+0012500002,Preseason,2025-10-06T23:30:00Z,2025-10-06T18:30:00-05:00,MIL (Bucks),MIA (Heat),Kaseya Center,Miami,FL,"",FanDuel Sports Network - Sun,FanDuel Sports Network - Wisconsin,"",false
+0012500014,Preseason,2025-10-07T00:00:00Z,2025-10-06T19:00:00-05:00,ATL (Hawks),HOU (Rockets),Toyota Center,Houston,TX,"",Space City Home Network,FanDuel Sports Network - Southeast - Atlanta,"",false
+0012500031,Preseason,2025-10-07T00:00:00Z,2025-10-06T19:00:00-05:00,DET (Pistons),MEM (Grizzlies),FedExForum,Memphis,TN,"",FanDuel Sports Network - Southeast - Memphis,FanDuel Sports Network - Detroit,"",false
+0012500032,Preseason,2025-10-07T00:00:00Z,2025-10-06T19:00:00-05:00,GUA (Loong-Lions),SAS (Spurs),Frost Bank Center,San Antonio,TX,"",CWSA,"","",false
+0012500033,Preseason,2025-10-07T00:30:00Z,2025-10-06T19:30:00-05:00,OKC (Thunder),DAL (Mavericks),Dickies Arena,Fort Worth,TX,NBA TV,KFAA,FDSNOK/KSBI,"",false
+0012500034,Preseason,2025-10-07T02:00:00Z,2025-10-06T21:00:00-05:00,DEN (Nuggets),TOR (Raptors),Rogers Arena,Vancouver,BC,"",TSN,"","",false
+0012500035,Preseason,2025-10-07T23:00:00Z,2025-10-07T18:00:00-05:00,CHI (Bulls),CLE (Cavaliers),Rocket Arena,Cleveland,OH,Peacock,FanDuel Sports Network - Ohio,Chicago Sports Network,"",false
+0012500036,Preseason,2025-10-08T00:00:00Z,2025-10-07T19:00:00-05:00,IND (Pacers),MIN (Timberwolves),Target Center,Minneapolis,MN,"",FanDuel Sports Network - North,FanDuel Sports Network - Indiana,"",false
+0012500003,Preseason,2025-10-08T23:30:00Z,2025-10-08T18:30:00-05:00,SAS (Spurs),MIA (Heat),Kaseya Center,Miami,FL,NBA TV,FanDuel Sports Network - Sun,CWSA,"",false
+0012500015,Preseason,2025-10-09T02:00:00Z,2025-10-08T21:00:00-05:00,POR (Trail Blazers),GSW (Warriors),Chase Center,San Francisco,CA,NBA TV,NBCSBA,KUNP,"",false
+0012500016,Preseason,2025-10-09T02:00:00Z,2025-10-08T21:00:00-05:00,TOR (Raptors),SAC (Kings),Golden 1 Center,Sacramento,CA,"",Kings.com/live,TSN,"",false
+0012500037,Preseason,2025-10-09T00:00:00Z,2025-10-08T19:00:00-05:00,UTA (Jazz),HOU (Rockets),Toyota Center,Houston,TX,"",Space City Home Network,KJZZ,"",false
+0012500038,Preseason,2025-10-09T00:00:00Z,2025-10-08T19:00:00-05:00,BOS (Celtics),MEM (Grizzlies),FedExForum,Memphis,TN,"",FanDuel Sports Network - Southeast - Memphis,NBC SPORTS BOSTON,"",false
+0012500039,Preseason,2025-10-09T23:30:00Z,2025-10-09T18:30:00-05:00,MIN (Timberwolves),NYK (Knicks),Madison Square Garden,New York,NY,NBA TV,MSG 2,"","",false
+0012500040,Preseason,2025-10-10T00:00:00Z,2025-10-09T19:00:00-05:00,CLE (Cavaliers),CHI (Bulls),United Center,Chicago,IL,"",Chicago Sports Network Plus,FanDuel Sports Network - Ohio,"",false
+0012500041,Preseason,2025-10-10T00:00:00Z,2025-10-09T19:00:00-05:00,DET (Pistons),MIL (Bucks),Fiserv Forum,Milwaukee,WI,"",FanDuel Sports Network - Wisconsin,FanDuel Sports Network - Detroit,"",false
+0012500042,Preseason,2025-10-10T00:00:00Z,2025-10-09T19:00:00-05:00,CHA (Hornets),OKC (Thunder),Paycom Center,Oklahoma City,OK,"",FDSNOK/KSBI,FanDuel Sports Network - Southeast - Charlotte,"",false
+0012500043,Preseason,2025-10-10T02:30:00Z,2025-10-09T21:30:00-05:00,GUA (Loong-Lions),LAC (Clippers),Frontwave Arena,Oceanside,CA,"","","","",false
+0012500012,Preseason,2025-10-10T12:00:00Z,2025-10-10T07:00:00-05:00,PHX (Suns),BKN (Nets),Venetian Arena,"Macao, China","",NBA TV,"",Arizona's Family Sports,"",false
+0012500017,Preseason,2025-10-11T02:00:00Z,2025-10-10T21:00:00-05:00,SAC (Kings),POR (Trail Blazers),Moda Center,Portland,OR,"","",Kings.com/live,"",false
+0012500044,Preseason,2025-10-10T23:00:00Z,2025-10-10T18:00:00-05:00,BOS (Celtics),TOR (Raptors),Scotiabank Arena,Toronto,ON,"",SN,NBC SPORTS BOSTON,"",false
+0012500045,Preseason,2025-10-11T00:00:00Z,2025-10-10T19:00:00-05:00,UTA (Jazz),SAS (Spurs),Frost Bank Center,San Antonio,TX,"",News 4 San Antonio,KJZZ,"",false
+0012500070,Preseason,2025-10-10T23:00:00Z,2025-10-10T18:00:00-05:00,ORL (Magic),PHI (76ers),Xfinity Mobile Arena,Philadelphia,PA,NBA TV,NBC Sports Philadelphia,"","",false
+0012500018,Preseason,2025-10-12T00:00:00Z,2025-10-11T19:00:00-05:00,ATL (Hawks),MEM (Grizzlies),FedExForum,Memphis,TN,"",FanDuel Sports Network - Southeast - Memphis,FanDuel Sports Network - Southeast - Atlanta,"",false
+0012500046,Preseason,2025-10-11T23:00:00Z,2025-10-11T18:00:00-05:00,OKC (Thunder),IND (Pacers),Gainbridge Fieldhouse,Indianapolis,IN,NBA TV,FanDuel Sports Network - Indiana,FanDuel Sports Network - Oklahoma,"",false
+0012500047,Preseason,2025-10-12T00:30:00Z,2025-10-11T19:30:00-05:00,CHA (Hornets),DAL (Mavericks),American Airlines Center,Dallas,TX,"",KFAA,"","",false
+0012500004,Preseason,2025-10-13T01:30:00Z,2025-10-12T20:30:00-05:00,GSW (Warriors),LAL (Lakers),Crypto.com Arena,Los Angeles,CA,"",Spectrum SportsNet,"","",false
+0012500013,Preseason,2025-10-12T11:00:00Z,2025-10-12T06:00:00-05:00,BKN (Nets),PHX (Suns),Venetian Arena,"Macao, China","",NBA TV,Arizona's Family Sports,"","",false
+0012500048,Preseason,2025-10-12T19:00:00Z,2025-10-12T14:00:00-05:00,TOR (Raptors),WAS (Wizards),Capital One Arena,Washington,DC,NBA TV,Monumental Sports Network,SN,"",false
+0012500049,Preseason,2025-10-12T22:00:00Z,2025-10-12T17:00:00-05:00,MIA (Heat),ORL (Magic),Kia Center,Orlando,FL,"",FanDuel Sports Network - Florida,FanDuel Sports Network - Sun,"",false
+0012500050,Preseason,2025-10-12T23:00:00Z,2025-10-12T18:00:00-05:00,CLE (Cavaliers),BOS (Celtics),TD Garden,Boston,MA,ESPN,NBC SPORTS BOSTON,FanDuel Sports Network - Ohio,"",false
+0012500051,Preseason,2025-10-12T23:00:00Z,2025-10-12T18:00:00-05:00,MIL (Bucks),CHI (Bulls),United Center,Chicago,IL,"",Chicago Sports Network,FanDuel Sports Network - Wisconsin,"",false
+0012500052,Preseason,2025-10-13T01:30:00Z,2025-10-12T20:30:00-05:00,DEN (Nuggets),LAC (Clippers),Intuit Dome,Inglewood,CA,ESPN,FanDuel Sports Network - SoCal/KTLA,"","",false
+0012500019,Preseason,2025-10-13T22:00:00Z,2025-10-13T17:00:00-05:00,MIA (Heat),ATL (Hawks),State Farm Arena,Atlanta,GA,NBA TV,FanDuel Sports Network - Southeast - Atlanta,FanDuel Sports Network - Sun,"",false
+0012500053,Preseason,2025-10-13T23:00:00Z,2025-10-13T18:00:00-05:00,SAS (Spurs),IND (Pacers),Gainbridge Fieldhouse,Indianapolis,IN,"",FanDuel Sports Network - Indiana,CWSA,"",false
+0012500054,Preseason,2025-10-13T23:30:00Z,2025-10-13T18:30:00-05:00,WAS (Wizards),NYK (Knicks),Madison Square Garden,New York,NY,"",MSG,Monumental Sports Network,"",false
+0012500055,Preseason,2025-10-14T00:00:00Z,2025-10-13T19:00:00-05:00,GUA (Loong-Lions),MIN (Timberwolves),Target Center,Minneapolis,MN,"","","","",false
+0012500056,Preseason,2025-10-14T01:00:00Z,2025-10-13T20:00:00-05:00,DAL (Mavericks),UTA (Jazz),Delta Center,Salt Lake City,UT,NBA TV,KJZZ,KFAA,"",false
+0012500020,Preseason,2025-10-15T00:00:00Z,2025-10-14T19:00:00-05:00,HOU (Rockets),NOP (Pelicans),Legacy Arena at the BJCC,Birmingham,AL,"",GCSEN,Space City Home Network,"",false
+0012500021,Preseason,2025-10-15T02:00:00Z,2025-10-14T21:00:00-05:00,GSW (Warriors),POR (Trail Blazers),Moda Center,Portland,OR,"",KUNP,"","",false
+0012500057,Preseason,2025-10-14T23:00:00Z,2025-10-14T18:00:00-05:00,DET (Pistons),CLE (Cavaliers),Rocket Arena,Cleveland,OH,"",FanDuel Sports Network - Ohio,FanDuel Sports Network - Detroit,"",false
+0012500058,Preseason,2025-10-15T00:00:00Z,2025-10-14T19:00:00-05:00,OKC (Thunder),MIL (Bucks),Fiserv Forum,Milwaukee,WI,Peacock,FanDuel Sports Network - Wisconsin,"","",false
+0012500059,Preseason,2025-10-15T01:00:00Z,2025-10-14T20:00:00-05:00,CHI (Bulls),DEN (Nuggets),Ball Arena,Denver,CO,"","",Chicago Sports Network,"",false
+0012500060,Preseason,2025-10-15T02:00:00Z,2025-10-14T21:00:00-05:00,LAL (Lakers),PHX (Suns),Mortgage Matchup Center,Phoenix,AZ,"",Arizona's Family 3TV / Arizona's Family Sports,Spectrum SportsNet,"",false
+0012500005,Preseason,2025-10-16T02:30:00Z,2025-10-15T21:30:00-05:00,DAL (Mavericks),LAL (Lakers),T-Mobile Arena,Las Vegas,NV,ESPN,Spectrum SportsNet,KFAA,"",false
+0012500022,Preseason,2025-10-16T02:00:00Z,2025-10-15T21:00:00-05:00,LAC (Clippers),SAC (Kings),Golden 1 Center,Sacramento,CA,"",NBCSCA,"","",false
+0012500061,Preseason,2025-10-15T23:00:00Z,2025-10-15T18:00:00-05:00,MEM (Grizzlies),CHA (Hornets),First Horizon Coliseum,Greensboro,NC,"",FanDuel Sports Network - Southeast - Charlotte,FanDuel Sports Network - Southeast - Memphis,"",false
+0012500062,Preseason,2025-10-15T23:30:00Z,2025-10-15T18:30:00-05:00,TOR (Raptors),BOS (Celtics),TD Garden,Boston,MA,NBA TV,NBC SPORTS BOSTON,TSN,"",false
+0012500023,Preseason,2025-10-16T23:00:00Z,2025-10-16T18:00:00-05:00,NOP (Pelicans),ORL (Magic),Kia Center,Orlando,FL,"",FanDuel Sports Network - Florida,Pelicans.com,"",false
+0012500024,Preseason,2025-10-16T23:30:00Z,2025-10-16T18:30:00-05:00,HOU (Rockets),ATL (Hawks),State Farm Arena,Atlanta,GA,ESPN2,"",Space City Home Network,"",false
+0012500025,Preseason,2025-10-17T01:00:00Z,2025-10-16T20:00:00-05:00,POR (Trail Blazers),UTA (Jazz),Delta Center,Salt Lake City,UT,"",KJZZ,"","",false
+0012500063,Preseason,2025-10-16T23:00:00Z,2025-10-16T18:00:00-05:00,WAS (Wizards),DET (Pistons),Little Caesars Arena,Detroit,MI,"",FanDuel Sports Network - Detroit,Monumental Sports Network,"",false
+0012500064,Preseason,2025-10-17T00:00:00Z,2025-10-16T19:00:00-05:00,MIN (Timberwolves),CHI (Bulls),United Center,Chicago,IL,"",Chicago Sports Network,FanDuel Sports Network - North,"",false
+0012500006,Preseason,2025-10-18T00:00:00Z,2025-10-17T19:00:00-05:00,MEM (Grizzlies),MIA (Heat),Kaseya Center,Miami,FL,"",FanDuel Sports Network - Sun,FanDuel Sports Network - Southeast - Memphis,"",false
+0012500007,Preseason,2025-10-18T02:30:00Z,2025-10-17T21:30:00-05:00,SAC (Kings),LAL (Lakers),Crypto.com Arena,Los Angeles,CA,NBA TV,Spectrum SportsNet,Kings.com/live,"",false
+0012500065,Preseason,2025-10-17T23:00:00Z,2025-10-17T18:00:00-05:00,BKN (Nets),TOR (Raptors),Scotiabank Arena,Toronto,ON,"",TSN,YES,"",false
+0012500066,Preseason,2025-10-17T23:30:00Z,2025-10-17T18:30:00-05:00,CHA (Hornets),NYK (Knicks),Madison Square Garden,New York,NY,"",MSG,"","",false
+0012500067,Preseason,2025-10-18T00:00:00Z,2025-10-17T19:00:00-05:00,DEN (Nuggets),OKC (Thunder),Paycom Center,Oklahoma City,OK,NBA TV,FDSNOK/KSBI,"","",false
+0012500068,Preseason,2025-10-18T00:00:00Z,2025-10-17T19:00:00-05:00,IND (Pacers),SAS (Spurs),Frost Bank Center,San Antonio,TX,"",FanDuel Sports Network - Southwest,FanDuel Sports Network - Indiana,"",false
+0012500069,Preseason,2025-10-18T02:00:00Z,2025-10-17T21:00:00-05:00,LAC (Clippers),GSW (Warriors),Chase Center,San Francisco,CA,"",NBCSBA,"","",false
+0012500071,Preseason,2025-10-17T23:00:00Z,2025-10-17T18:00:00-05:00,MIN (Timberwolves),PHI (76ers),Xfinity Mobile Arena,Philadelphia,PA,"",NBC Sports Philadelphia,"","",false
 0022500001,Regular Season,2025-10-21T23:30:00Z,2025-10-21T18:30:00-05:00,HOU (Rockets),OKC (Thunder),Paycom Center,Oklahoma City,OK,NBC | Peacock,"","","",false
 0022500002,Regular Season,2025-10-22T02:00:00Z,2025-10-21T21:00:00-05:00,GSW (Warriors),LAL (Lakers),Crypto.com Arena,Los Angeles,CA,NBC | Peacock,"","","",false
 0022500003,Regular Season,2025-10-22T23:00:00Z,2025-10-22T18:00:00-05:00,CLE (Cavaliers),NYK (Knicks),Madison Square Garden,New York,NY,ESPN,MSG,"","",false

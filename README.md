@@ -1,19 +1,27 @@
 # NBA 2025-26 Schedule Data Extractor
 
-Ruby script to fetch and export the NBA 2025-26 regular season schedule with TV broadcast information to CSV format.
+Ruby script to fetch and export the NBA 2025-26 schedule (preseason and regular season) with TV broadcast information in both CSV and JSON formats.
 
 ## Usage
 
 ```bash
-ruby nba_2025_26_schedule_to_csv.rb
+ruby fetch_schedule.rb
 ```
 
-This will generate `nba_2025_26_regular_season.csv` containing all regular season games from October 2025 to April 2026.
+This will generate two files:
+- `nba_2025_26_schedule.csv` - CSV format with all games
+- `nba_2025_26_schedule.json` - JSON format with metadata and all games
 
-## Output CSV Columns
+The data includes:
+- **Preseason games:** October 2-20, 2025
+- **Regular season games:** October 21, 2025 - April 2026
+
+## Output Formats
+
+### CSV Columns
 
 - `game_id` - Unique NBA game identifier
-- `season_type` - Season type (Regular Season)
+- `season_type` - Season type ("Preseason" or "Regular Season")
 - `tip_utc` - Game tip-off time in UTC (ISO 8601 format)
 - `tip_et` - Game tip-off time in Eastern Time (ISO 8601 format)
 - `away_team` - Away team (tricode and name)
@@ -26,6 +34,39 @@ This will generate `nba_2025_26_regular_season.csv` containing all regular seaso
 - `away_rsns` - Away team regional sports networks
 - `international` - International broadcasters
 - `is_tbd` - Whether game details are to be determined
+
+### JSON Structure
+
+The JSON file contains metadata and an array of all games:
+
+```json
+{
+  "season": "2025-26",
+  "total_games": 1279,
+  "preseason_games": 80,
+  "regular_season_games": 1199,
+  "regular_season_start_date": "2025-10-21",
+  "last_updated": "2025-10-18T15:30:00Z",
+  "games": [
+    {
+      "game_id": "0012500008",
+      "season_type": "Preseason",
+      "tip_utc": "2025-10-02T16:00:00Z",
+      "tip_et": "2025-10-02T11:00:00-05:00",
+      "away_team": "PHI (76ers)",
+      "home_team": "NYK (Knicks)",
+      "venue": "Etihad Arena",
+      "city": "Abu Dhabi",
+      "state": "",
+      "national_tv": "NBA TV",
+      "home_rsns": "MSG",
+      "away_rsns": "",
+      "international": "",
+      "is_tbd": false
+    }
+  ]
+}
+```
 
 ## Data Source
 
@@ -213,15 +254,17 @@ Based on historical data and fallback mapping:
 
 ## Filtering
 
-The script filters games based on:
+The script processes games based on:
 
 1. **Date Range:** October 1, 2025 - April 30, 2026
    - Configured via `SEASON_START` and `SEASON_END` constants
    - Uses `gameDateTimeUTC` for accurate filtering
 
-2. **Season Type:** Regular season games only
-   - Note: Current API version doesn't include `seasonStage` field
-   - All games in date range are assumed to be regular season
+2. **Season Type Classification:**
+   - Games before October 21, 2025 are labeled as "Preseason"
+   - Games on or after October 21, 2025 are labeled as "Regular Season"
+   - Configured via `REGULAR_SEASON_START` constant
+   - Note: The NBA API may label preseason games as "Regular Season", so this script corrects that based on the actual regular season start date
 
 ## Additional Available Data (Not Currently Extracted)
 
