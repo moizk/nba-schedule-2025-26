@@ -4,7 +4,7 @@
   "preseason_games": 71,
   "regular_season_games": 1207,
   "regular_season_start_date": "2025-10-21",
-  "last_updated": "2025-10-18T11:47:49Z",
+  "last_updated": "2025-11-07T12:49:38Z",
   "games": [
     {
       "game_id": "0012500008",
@@ -1465,8 +1465,8 @@
     {
       "game_id": "0022500092",
       "season_type": "Regular Season",
-      "tip_utc": "2025-10-24T23:30:00Z",
-      "tip_et": "2025-10-24T18:30:00-05:00",
+      "tip_utc": "2025-10-24T22:30:00Z",
+      "tip_et": "2025-10-24T17:30:00-05:00",
       "away_team": "MIL (Bucks)",
       "home_team": "TOR (Raptors)",
       "venue": "Scotiabank Arena",
@@ -1522,7 +1522,7 @@
       "state": "LA",
       "national_tv": "",
       "home_rsns": "GCSEN",
-      "away_rsns": "",
+      "away_rsns": "KENS",
       "international": "",
       "is_tbd": false
     },
@@ -1681,7 +1681,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "YES",
       "international": "",
       "is_tbd": false
@@ -1921,7 +1921,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "SN",
       "international": "",
       "is_tbd": false
@@ -2121,8 +2121,8 @@
     {
       "game_id": "0022500131",
       "season_type": "Regular Season",
-      "tip_utc": "2025-10-29T23:30:00Z",
-      "tip_et": "2025-10-29T18:30:00-05:00",
+      "tip_utc": "2025-10-29T22:30:00Z",
+      "tip_et": "2025-10-29T17:30:00-05:00",
       "away_team": "HOU (Rockets)",
       "home_team": "TOR (Raptors)",
       "venue": "Scotiabank Arena",
@@ -2289,7 +2289,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - Sun",
       "international": "",
       "is_tbd": false
@@ -2512,7 +2512,7 @@
       "venue": "Arena CDMX",
       "city": "Mexico City",
       "state": "MX",
-      "national_tv": "Peacock",
+      "national_tv": "Telemundo | Peacock",
       "home_rsns": "",
       "away_rsns": "",
       "international": "",
@@ -2626,7 +2626,7 @@
       "state": "AZ",
       "national_tv": "",
       "home_rsns": "Arizona's Family 3TV / Arizona's Family Sports",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -2897,7 +2897,7 @@
       "city": "Cleveland",
       "state": "OH",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Ohio",
+      "home_rsns": "FDSNOH/Rock Sports",
       "away_rsns": "NBC Sports Philadelphia",
       "international": "",
       "is_tbd": false
@@ -3026,7 +3026,7 @@
       "state": "CA",
       "national_tv": "ESPN",
       "home_rsns": "Spectrum SportsNet",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -3217,7 +3217,7 @@
       "city": "Minneapolis",
       "state": "MN",
       "national_tv": "",
-      "home_rsns": "FDSNNOX",
+      "home_rsns": "FDSNNOX/KARE 11",
       "away_rsns": "KJZZ",
       "international": "",
       "is_tbd": false
@@ -3297,7 +3297,7 @@
       "city": "Atlanta",
       "state": "GA",
       "national_tv": "NBA TV",
-      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "home_rsns": "FDSNSE-ATL/WANF/PSN",
       "away_rsns": "Spectrum SportsNet",
       "international": "",
       "is_tbd": false
@@ -3329,7 +3329,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "KUNP",
       "international": "",
       "is_tbd": false
@@ -3345,7 +3345,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "GCSEN",
       "international": "",
       "is_tbd": false
@@ -3570,7 +3570,7 @@
       "state": "IL",
       "national_tv": "",
       "home_rsns": "Chicago Sports Network",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -3857,7 +3857,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "NBCSBA",
       "international": "",
       "is_tbd": false
@@ -4065,7 +4065,7 @@
       "city": "Minneapolis",
       "state": "MN",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - North",
+      "home_rsns": "FDSNNO/KARE 11",
       "away_rsns": "NBCSCA",
       "international": "",
       "is_tbd": false
@@ -4225,7 +4225,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "NBCSCA",
       "international": "",
       "is_tbd": false
@@ -4258,7 +4258,7 @@
       "state": "TX",
       "national_tv": "",
       "home_rsns": "Space City Home Network",
-      "away_rsns": "FanDuel Sports Network - Florida",
+      "away_rsns": "FanDuel Sports Network - Florida / CW18",
       "international": "",
       "is_tbd": false
     },
@@ -4489,15 +4489,15 @@
     {
       "game_id": "0022500251",
       "season_type": "Regular Season",
-      "tip_utc": "2025-11-19T01:00:00Z",
-      "tip_et": "2025-11-18T20:00:00-05:00",
+      "tip_utc": "2025-11-19T00:30:00Z",
+      "tip_et": "2025-11-18T19:30:00-05:00",
       "away_team": "DET (Pistons)",
       "home_team": "ATL (Hawks)",
       "venue": "State Farm Arena",
       "city": "Atlanta",
       "state": "GA",
-      "national_tv": "NBC | Peacock",
-      "home_rsns": "",
+      "national_tv": "",
+      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
       "away_rsns": "FanDuel Sports Network - Detroit",
       "international": "",
       "is_tbd": false
@@ -4512,9 +4512,9 @@
       "venue": "Frost Bank Center",
       "city": "San Antonio",
       "state": "TX",
-      "national_tv": "",
+      "national_tv": "NBC | Peacock",
       "home_rsns": "",
-      "away_rsns": "FanDuel Sports Network - Southeast - Memphis",
+      "away_rsns": "",
       "international": "",
       "is_tbd": false
     },
@@ -4753,7 +4753,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "NBA TV",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - Southeast - Atlanta",
       "international": "",
       "is_tbd": false
@@ -4850,7 +4850,7 @@
       "state": "AZ",
       "national_tv": "",
       "home_rsns": "Arizona's Family Sports / CBS 5",
-      "away_rsns": "FDSNNOX",
+      "away_rsns": "FDSNNOX/KARE 11",
       "international": "",
       "is_tbd": false
     },
@@ -5122,7 +5122,7 @@
       "state": "AZ",
       "national_tv": "",
       "home_rsns": "Arizona's Family 3TV / Arizona's Family Sports",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -5474,7 +5474,7 @@
       "state": "OR",
       "national_tv": "",
       "home_rsns": "KUNP",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -5618,7 +5618,7 @@
       "state": "CO",
       "national_tv": "",
       "home_rsns": "Altitude",
-      "away_rsns": "",
+      "away_rsns": "KENS",
       "international": "",
       "is_tbd": false
     },
@@ -5729,7 +5729,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "FDSNDTX",
       "international": "",
       "is_tbd": false
@@ -5890,7 +5890,7 @@
       "state": "MN",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - North",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -6145,7 +6145,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - Southeast - Memphis",
       "international": "",
       "is_tbd": false
@@ -6210,7 +6210,7 @@
       "state": "FL",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Florida",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -6225,7 +6225,7 @@
       "city": "Atlanta",
       "state": "GA",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "home_rsns": "FDSNSE-ATL/WANF/PSN",
       "away_rsns": "FanDuel Sports Network - SoCal",
       "international": "",
       "is_tbd": false
@@ -6450,7 +6450,7 @@
       "state": "OH",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Ohio",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -6657,7 +6657,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "NBCSCA",
       "international": "",
       "is_tbd": false
@@ -6706,7 +6706,7 @@
       "state": "NY",
       "national_tv": "",
       "home_rsns": "MSG",
-      "away_rsns": "FanDuel Sports Network - Florida",
+      "away_rsns": "FanDuel Sports Network - Florida / CW18",
       "international": "",
       "is_tbd": false
     },
@@ -6850,7 +6850,7 @@
       "state": "LA",
       "national_tv": "Peacock",
       "home_rsns": "",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -7025,7 +7025,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "Monumental Sports Network",
       "international": "",
       "is_tbd": false
@@ -7233,8 +7233,8 @@
       "city": "Atlanta",
       "state": "GA",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
-      "away_rsns": "",
+      "home_rsns": "FDSNSE-ATL/WANF/PSN",
+      "away_rsns": "KENS",
       "international": "",
       "is_tbd": false
     },
@@ -7490,7 +7490,7 @@
       "state": "DC",
       "national_tv": "",
       "home_rsns": "Monumental Sports Network",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -7729,7 +7729,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "SN",
       "international": "",
       "is_tbd": false
@@ -7777,7 +7777,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FDSNOK/KWTV",
       "international": "",
       "is_tbd": false
@@ -7953,7 +7953,7 @@
       "city": "Atlanta",
       "state": "GA",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "home_rsns": "FDSNSE-ATL/WANF/PSN",
       "away_rsns": "FanDuel Sports Network - Sun",
       "international": "",
       "is_tbd": false
@@ -8113,7 +8113,7 @@
       "city": "Orlando",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Florida",
+      "home_rsns": "FanDuel Sports Network - Florida / WESH 2",
       "away_rsns": "Altitude 2",
       "international": "",
       "is_tbd": false
@@ -8161,7 +8161,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "FanDuel Sports Network - Indiana",
       "international": "",
       "is_tbd": false
@@ -8225,7 +8225,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "KJZZ",
       "international": "",
       "is_tbd": false
@@ -8593,7 +8593,7 @@
       "city": "Atlanta",
       "state": "GA",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "home_rsns": "FDSNSE-ATL/WANF/PSN",
       "away_rsns": "FDSNNOX",
       "international": "",
       "is_tbd": false
@@ -8657,7 +8657,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "MSG",
       "international": "",
       "is_tbd": false
@@ -8802,7 +8802,7 @@
       "state": "IN",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Indiana",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -8866,7 +8866,7 @@
       "state": "IL",
       "national_tv": "",
       "home_rsns": "Chicago Sports Network",
-      "away_rsns": "FanDuel Sports Network - Florida",
+      "away_rsns": "FanDuel Sports Network - Florida / WESH 2",
       "international": "",
       "is_tbd": false
     },
@@ -8961,7 +8961,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "NBA TV",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "FanDuel Sports Network - North",
       "international": "",
       "is_tbd": false
@@ -9025,7 +9025,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "KUNP",
       "international": "",
       "is_tbd": false
@@ -9137,7 +9137,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "GCSEN",
       "international": "",
       "is_tbd": false
@@ -9346,7 +9346,7 @@
       "state": "IN",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Indiana",
-      "away_rsns": "FanDuel Sports Network - Ohio",
+      "away_rsns": "FDSNOH/Rock Sports",
       "international": "",
       "is_tbd": false
     },
@@ -9378,7 +9378,7 @@
       "state": "TN",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Southeast - Memphis",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -9553,7 +9553,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "ESPN",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "Spectrum SportsNet",
       "international": "",
       "is_tbd": false
@@ -9778,7 +9778,7 @@
       "state": "CO",
       "national_tv": "",
       "home_rsns": "Altitude",
-      "away_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "away_rsns": "FDSNSE-ATL/WANF/PSN",
       "international": "",
       "is_tbd": false
     },
@@ -9906,7 +9906,7 @@
       "state": "MA",
       "national_tv": "",
       "home_rsns": "NBC SPORTS BOSTON",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -10018,7 +10018,7 @@
       "state": "MN",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - North",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -10274,7 +10274,7 @@
       "state": "OK",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Oklahoma",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -10497,7 +10497,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FDSNWI/WMLW",
       "international": "",
       "is_tbd": false
@@ -10737,7 +10737,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "FDSNOK/KWTV",
       "international": "",
       "is_tbd": false
@@ -10753,7 +10753,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - North",
       "international": "",
       "is_tbd": false
@@ -11025,7 +11025,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "KJZZ",
       "international": "",
       "is_tbd": false
@@ -11362,7 +11362,7 @@
       "state": "UT",
       "national_tv": "",
       "home_rsns": "KJZZ",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -11585,7 +11585,7 @@
       "city": "Orlando",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Florida",
+      "home_rsns": "FanDuel Sports Network - Florida / WESH 2",
       "away_rsns": "FanDuel Sports Network - Ohio",
       "international": "",
       "is_tbd": false
@@ -11713,7 +11713,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "GCSEN",
       "international": "",
       "is_tbd": false
@@ -12402,7 +12402,7 @@
       "state": "NC",
       "national_tv": "Prime Video",
       "home_rsns": "",
-      "away_rsns": "",
+      "away_rsns": "KENS",
       "international": "",
       "is_tbd": false
     },
@@ -12497,8 +12497,8 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
-      "away_rsns": "FanDuel Sports Network - Florida",
+      "home_rsns": "FanDuel Sports Network - Southwest",
+      "away_rsns": "FanDuel Sports Network - Florida / CW18",
       "international": "",
       "is_tbd": false
     },
@@ -12529,7 +12529,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "Chicago Sports Network",
       "international": "",
       "is_tbd": false
@@ -12929,7 +12929,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "ESPN",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - Oklahoma",
       "international": "",
       "is_tbd": false
@@ -13058,7 +13058,7 @@
       "state": "TX",
       "national_tv": "",
       "home_rsns": "KFAA",
-      "away_rsns": "",
+      "away_rsns": "KENS",
       "international": "",
       "is_tbd": false
     },
@@ -13265,7 +13265,7 @@
       "city": "Atlanta",
       "state": "GA",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "home_rsns": "FDSNSE-ATL/WANF/PSN",
       "away_rsns": "FanDuel Sports Network - Southeast - Charlotte",
       "international": "",
       "is_tbd": false
@@ -13634,7 +13634,7 @@
       "state": "CA",
       "national_tv": "NBA TV",
       "home_rsns": "Spectrum SportsNet",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -13858,7 +13858,7 @@
       "state": "CA",
       "national_tv": "",
       "home_rsns": "NBCSBA",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -14017,7 +14017,7 @@
       "city": "Austin",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "KENS",
       "away_rsns": "Arizona's Family 3TV / Arizona's Family Sports",
       "international": "",
       "is_tbd": false
@@ -14257,7 +14257,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "FanDuel Sports Network - Southeast - Memphis",
       "international": "",
       "is_tbd": false
@@ -14289,7 +14289,7 @@
       "city": "Austin",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "KENS",
       "away_rsns": "NBCSCA",
       "international": "",
       "is_tbd": false
@@ -14738,7 +14738,7 @@
       "state": "ON",
       "national_tv": "",
       "home_rsns": "TSN",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -14866,7 +14866,7 @@
       "state": "NY",
       "national_tv": "",
       "home_rsns": "YES",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -15393,7 +15393,7 @@
       "city": "Cleveland",
       "state": "OH",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Ohio",
+      "home_rsns": "FDSNOH/Rock Sports",
       "away_rsns": "FanDuel Sports Network - Detroit",
       "international": "",
       "is_tbd": false
@@ -15458,7 +15458,7 @@
       "state": "PA",
       "national_tv": "NBC | Peacock",
       "home_rsns": "NBC Sports Philadelphia",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -15713,7 +15713,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - Detroit",
       "international": "",
       "is_tbd": false
@@ -15857,7 +15857,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "ESPN",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - SoCal",
       "international": "",
       "is_tbd": false
@@ -16321,7 +16321,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "NBC SPORTS BOSTON",
       "international": "",
       "is_tbd": false
@@ -16577,7 +16577,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "Altitude",
       "international": "",
       "is_tbd": false
@@ -16801,8 +16801,8 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
-      "away_rsns": "FanDuel Sports Network - Florida",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
+      "away_rsns": "FanDuel Sports Network - Florida / WESH 2",
       "international": "",
       "is_tbd": false
     },
@@ -16817,7 +16817,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - Southeast - Charlotte",
       "international": "",
       "is_tbd": false
@@ -16881,7 +16881,7 @@
       "city": "Cleveland",
       "state": "OH",
       "national_tv": "NBA TV",
-      "home_rsns": "FanDuel Sports Network - Ohio",
+      "home_rsns": "FDSNOH/Rock Sports",
       "away_rsns": "KFAA",
       "international": "",
       "is_tbd": false
@@ -16977,7 +16977,7 @@
       "city": "Atlanta",
       "state": "GA",
       "national_tv": "Peacock",
-      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "home_rsns": "",
       "away_rsns": "",
       "international": "",
       "is_tbd": false
@@ -17090,7 +17090,7 @@
       "state": "CA",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - SoCal",
-      "away_rsns": "",
+      "away_rsns": "KENS",
       "international": "",
       "is_tbd": false
     },
@@ -17218,7 +17218,7 @@
       "state": "CA",
       "national_tv": "NBC | Peacock",
       "home_rsns": "",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -17346,7 +17346,7 @@
       "state": "TX",
       "national_tv": "",
       "home_rsns": "KFAA",
-      "away_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "away_rsns": "FDSNSE-ATL/WANF/PSN",
       "international": "",
       "is_tbd": false
     },
@@ -17457,7 +17457,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "Arizona's Family 3TV / Arizona's Family Sports",
       "international": "",
       "is_tbd": false
@@ -17697,7 +17697,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "FanDuel Sports Network - Indiana",
       "international": "",
       "is_tbd": false
@@ -17906,7 +17906,7 @@
       "state": "FL",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Sun",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -18146,7 +18146,7 @@
       "state": "TN",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Southeast - Memphis",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -18466,7 +18466,7 @@
       "state": "WI",
       "national_tv": "Prime Video",
       "home_rsns": "",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -18497,7 +18497,7 @@
       "city": "Atlanta",
       "state": "GA",
       "national_tv": "NBA TV",
-      "home_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "home_rsns": "FDSNSE-ATL/WANF/PSN",
       "away_rsns": "NBCSCA",
       "international": "",
       "is_tbd": false
@@ -18753,7 +18753,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "Chicago Sports Network",
       "international": "",
       "is_tbd": false
@@ -19058,7 +19058,7 @@
       "state": "CA",
       "national_tv": "ESPN",
       "home_rsns": "NBCSBA",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -19154,7 +19154,7 @@
       "state": "CA",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - SoCal",
-      "away_rsns": "",
+      "away_rsns": "FanDuel Sports Network - Southwest",
       "international": "",
       "is_tbd": false
     },
@@ -19282,7 +19282,7 @@
       "state": "TX",
       "national_tv": "",
       "home_rsns": "KFAA",
-      "away_rsns": "FanDuel Sports Network - Florida",
+      "away_rsns": "FanDuel Sports Network - Florida / WESH 2",
       "international": "",
       "is_tbd": false
     },
@@ -19313,7 +19313,7 @@
       "city": "Miami",
       "state": "FL",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Sun",
+      "home_rsns": "FanDuel Sports Network - Sun / WPLG Local 10",
       "away_rsns": "Monumental Sports Network",
       "international": "",
       "is_tbd": false
@@ -19458,7 +19458,7 @@
       "state": "LA",
       "national_tv": "",
       "home_rsns": "GCSEN",
-      "away_rsns": "FanDuel Sports Network - Florida",
+      "away_rsns": "FanDuel Sports Network - Florida / CW18",
       "international": "",
       "is_tbd": false
     },
@@ -19585,7 +19585,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "NBC Sports Philadelphia",
       "international": "",
       "is_tbd": false
@@ -19777,8 +19777,8 @@
       "city": "Cleveland",
       "state": "OH",
       "national_tv": "",
-      "home_rsns": "FanDuel Sports Network - Ohio",
-      "away_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "home_rsns": "FDSNOH/Rock Sports",
+      "away_rsns": "FDSNSE-ATL/WANF/PSN",
       "international": "",
       "is_tbd": false
     },
@@ -19825,7 +19825,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "KUNP",
       "international": "",
       "is_tbd": false
@@ -20082,7 +20082,7 @@
       "state": "IL",
       "national_tv": "",
       "home_rsns": "Chicago Sports Network",
-      "away_rsns": "FanDuel Sports Network - Florida",
+      "away_rsns": "FanDuel Sports Network - Florida / WESH 2",
       "international": "",
       "is_tbd": false
     },
@@ -20098,7 +20098,7 @@
       "state": "TX",
       "national_tv": "",
       "home_rsns": "Space City Home Network",
-      "away_rsns": "FanDuel Sports Network - North",
+      "away_rsns": "FDSNNO/KARE 11",
       "international": "",
       "is_tbd": false
     },
@@ -20129,7 +20129,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "KENS",
       "away_rsns": "KFAA",
       "international": "",
       "is_tbd": false
@@ -20274,7 +20274,7 @@
       "state": "FL",
       "national_tv": "",
       "home_rsns": "FanDuel Sports Network - Sun",
-      "away_rsns": "FanDuel Sports Network - Southeast - Atlanta",
+      "away_rsns": "FDSNSE-ATL/WANF/PSN",
       "international": "",
       "is_tbd": false
     },
@@ -20401,7 +20401,7 @@
       "city": "San Antonio",
       "state": "TX",
       "national_tv": "",
-      "home_rsns": "",
+      "home_rsns": "FanDuel Sports Network - Southwest",
       "away_rsns": "ALT/KTVD",
       "international": "",
       "is_tbd": false
